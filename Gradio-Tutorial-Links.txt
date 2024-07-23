@@ -1,0 +1,12 @@
+https://medium.com/@nimritakoul01/getting-started-with-gradio-python-library-49e59e363c66
+
+https://www.datacamp.com/tutorial/gradio-python-tutorial
+
+https://www.freecodecamp.org/news/build-gui-using-gradio-for-machine-learning-models/
+
+https://abdulsamodazeez.com/how-to-build-a-machine-learning-web-app-in-python-using-gradio
+
+https://ifeanyidiaye.medium.com/easily-build-run-python-gradio-applications-inside-the-browser-with-gradio-lite-a5b0df9bcf7c
+
+https://medium.com/@nimritakoul01/getting-started-with-gradio-python-library-49e59e363c66
+ 
