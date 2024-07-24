@@ -1,5 +1,7 @@
 https://www.geeksforgeeks.org/intrusion-detection-system-using-machine-learning-algorithms/
 
+https://github.com/mudgalabhay/intrusion-detection-system/blob/master/main.ipynb
+
 https://medium.com/@nimritakoul01/getting-started-with-gradio-python-library-49e59e363c66
 
 https://www.datacamp.com/tutorial/gradio-python-tutorial
