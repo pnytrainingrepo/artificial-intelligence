@@ -1,0 +1,7 @@
+https://www.datacamp.com/tutorial/pandas
+
+https://www.datacamp.com/tutorial/pandas-read-csv
+
+https://archive.ics.uci.edu/dataset/53/iris
+
+https://www.datacamp.com/datalab/w/974d6e44-5559-413a-9ab5-d5b9e4af7c33/edit
