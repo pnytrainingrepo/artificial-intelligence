@@ -1,0 +1,265 @@
+----------------------------------------------------------------------------------------
+Seaborn scatter plots
+----------------------------------------------------------------------------------------
+This simple plot can be improved by customizing the `hue` and `size` parameters of the plot. Here’s how:
+
+
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+tips = sns.load_dataset("tips")
+
+
+# customize the scatter plot
+
+sns.scatterplot(x="total_bill", y="tip", hue="sex", size="size", sizes=(50, 200), data=tips)
+
+
+# add labels and title
+
+plt.xlabel("Total Bill")
+
+plt.ylabel("Tip")
+
+plt.title("Relationship between Total Bill and Tip")
+
+
+# display the plot
+
+plt.show()
+
+
+----------------------------------------------------------------------------------------
+Seaborn line plots
+----------------------------------------------------------------------------------------
+
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+
+fmri = sns.load_dataset("fmri")
+
+
+# customize the line plot
+
+sns.lineplot(x="timepoint", y="signal", hue="event", style="region", markers=True, dashes=False, data=fmri)
+
+# add labels and title
+
+plt.xlabel("Timepoint")
+
+plt.ylabel("Signal Intensity")
+
+plt.title("Changes in Signal Intensity over Time")
+
+# display the plot
+
+plt.show()
+
+
+----------------------------------------------------------------------------------------
+Seaborn bar plots
+----------------------------------------------------------------------------------------
+
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+
+titanic = sns.load_dataset("titanic")
+
+# customize the bar plot
+
+sns.barplot(x="class", y="fare", hue="sex", ci=None, palette="muted", data=titanic)
+
+# add labels and title
+
+plt.xlabel("Class")
+
+plt.ylabel("Fare")
+
+plt.title("Average Fare by Class and Gender on the Titanic")
+
+
+
+
+# display the plot
+
+plt.show()
+
+
+
+----------------------------------------------------------------------------------------
+Seaborn histograms
+----------------------------------------------------------------------------------------
+
+
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+iris = sns.load_dataset("iris")
+
+# customize the histogram
+
+sns.histplot(data=iris, x="petal_length", bins=20, kde=True, color="green")
+
+# add labels and title
+
+plt.xlabel("Petal Length (cm)")
+
+plt.ylabel("Frequency")
+
+plt.title("Distribution of Petal Lengths in Iris Flowers")
+
+# display the plot
+
+plt.show()
+
+
+----------------------------------------------------------------------------------------
+Seaborn density plots
+----------------------------------------------------------------------------------------
+
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+
+# Load the "tips" dataset from Seaborn
+
+tips = sns.load_dataset("tips")
+
+
+
+# Create a density plot of the "total_bill" column from the "tips" dataset
+
+# We use the "hue" parameter to differentiate between "lunch" and "dinner" meal times
+
+# We use the "fill" parameter to fill the area under the curve
+
+# We adjust the "alpha" and "linewidth" parameters to make the plot more visually appealing
+
+
+sns.kdeplot(data=tips, x="total_bill", hue="time", fill=True, alpha=0.6, linewidth=1.5)
+
+# Add a title and labels to the plot using Matplotlib
+
+
+plt.title("Density Plot of Total Bill by Meal Time")
+
+plt.xlabel("Total Bill ($)")
+
+plt.ylabel("Density")
+
+
+# Show the plot
+
+plt.show()
+
+
+
+----------------------------------------------------------------------------------------
+Seaborn box plots
+----------------------------------------------------------------------------------------
+
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+
+# load the tips dataset from Seaborn
+
+tips = sns.load_dataset("tips")
+
+
+# create a box plot of total bill by day and meal time, using the "hue" parameter to differentiate between lunch and dinner
+
+# customize the color scheme using the "palette" parameter
+
+# adjust the linewidth and fliersize parameters to make the plot more visually appealing
+
+sns.boxplot(x="day", y="total_bill", hue="time", data=tips, palette="Set3", linewidth=1.5, fliersize=4)
+
+
+# add a title, xlabel, and ylabel to the plot using Matplotlib functions
+
+plt.title("Box Plot of Total Bill by Day and Meal Time")
+
+plt.xlabel("Day of the Week")
+
+plt.ylabel("Total Bill ($)")
+
+
+# display the plot
+
+plt.show()
+
+
+----------------------------------------------------------------------------------------
+Seaborn heatmaps
+----------------------------------------------------------------------------------------
+
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+
+# Load the dataset
+
+flights = sns.load_dataset('flights')
+
+
+# Pivot the data
+
+flights = flights.pivot('month', 'year', 'passengers')
+
+
+# Create a heatmap
+
+sns.heatmap(flights, cmap='Blues', annot=True, fmt='d')
+
+
+# Set the title and axis labels
+
+plt.title('Passengers per month')
+
+plt.xlabel('Year')
+
+plt.ylabel('Month')
+
+
+# Show the plot
+
+plt.show()
+
+
+----------------------------------------------------------------------------------------
+Seaborn pair plots
+----------------------------------------------------------------------------------------
+
+
+import seaborn as sns
+
+import matplotlib.pyplot as plt
+
+
+# Load iris dataset
+
+iris = sns.load_dataset("iris")
+
+
+# Create pair plot with custom settings
+
+sns.pairplot(data=iris, hue="species", diag_kind="kde", palette="husl")
+
+
+# Set title
+
+plt.title("Iris Dataset Pair Plot")
+
+# Show plot
+
+plt.show()
