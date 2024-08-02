@@ -2,6 +2,8 @@ https://www.geeksforgeeks.org/numpy-cheat-sheet/ [NUMPY EXCISES]
 
 https://www.w3schools.com/python/pandas/pandas_csv.asp [dataset]
 
+https://www.kaggle.com/code/saurav9786/seaborn-tutorial [SeaBorn]
+
 https://www.geeksforgeeks.org/intrusion-detection-system-using-machine-learning-algorithms/
 
 https://github.com/mudgalabhay/intrusion-detection-system/blob/master/main.ipynb
