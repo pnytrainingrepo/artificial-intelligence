@@ -1,3 +1,5 @@
+https://remykarem.github.io/blog/evaluation-metrics.html [EVALUATION METRICS CALCULATION]
+
 https://www.geeksforgeeks.org/numpy-cheat-sheet/ [NUMPY EXCISES]
 
 https://www.w3schools.com/python/pandas/pandas_csv.asp [dataset]
