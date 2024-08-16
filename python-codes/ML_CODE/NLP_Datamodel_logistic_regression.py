@@ -11,8 +11,8 @@ from nltk.tokenize import word_tokenize
 from nltk import download
 
 # Download necessary NLTK data
-download('punkt')
-download('stopwords')
+#download('punkt')
+#download('stopwords')
 
 # 1. Load Dataset
 newsgroups = fetch_20newsgroups(subset='all')
@@ -40,8 +40,7 @@ X_train, X_test, y_train, y_test = train_test_split(X_vectorized, y, test_size=0
 
 # 5. Train Model
 model = LogisticRegression(max_iter=1000)  # Increased max_iter to ensure convergence
-model = 
-model.fit(X_train, y_train)
+model = model.fit(X_train, y_train)
 
 # 6. Predict
 y_pred = model.predict(X_test)
