@@ -1,0 +1,11 @@
+https://swagger.io/docs/specification/api-host-and-base-path/
+
+https://www.techtarget.com/searchapparchitecture/definition/RESTful-API
+
+GITHUP ACTIONS [CI/CD PIPELINE] => EVENT DRIVEN ARCHITECTURE
+ [CLOUD DEPENDENT]
+
+RESTFUL API [MULTIPLE ENDPOINTS] GET, POST, PUT, DELETE
+GRAPHQL [SINGLE ENDPOINT]
+
+MICROSERVICE
