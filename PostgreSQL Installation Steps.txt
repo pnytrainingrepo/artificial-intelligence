@@ -1,0 +1,11 @@
+Step No 1: Open the Control Panel → System → Advanced System Settings → Environment Variables.
+
+Step No 2: In System Variables, find Path, click Edit, and add C:\Program Files\PostgreSQL\16\bin.
+
+Step No 3: Verify Installation
+Open Command Prompt and type:
+psql --version
+
+Step No 4: To connect to the database, use:
+Type on Command Prompt:
+psql -U postgres
