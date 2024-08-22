@@ -1,13 +1,54 @@
 from fastapi import Depends, FastAPI, HTTPException, Query
 from sqlmodel import Field, Session, SQLModel, create_engine, select
 
-# Code here omitted 👈
+
+class HeroBase(SQLModel):
+    name: str = Field(index=True)
+    secret_name: str
+    age: int | None = Field(default=None, index=True)
+
+
+class Hero(HeroBase, table=True):
+    id: int | None = Field(default=None, primary_key=True)
+
+
+class HeroCreate(HeroBase):
+    pass
+
+
+class HeroPublic(HeroBase):
+    id: int
+
+
+class HeroUpdate(SQLModel):
+    name: str | None = None
+    secret_name: str | None = None
+    age: int | None = None
+
+
+# Database URL
+DATABASE_URL = "postgresql://postgres:speed123@localhost/hero_db"
+
+# Create the database engine
+engine = create_engine(DATABASE_URL, echo=True)
+
+# Create the FastAPI app
+app = FastAPI()
 
 def get_session():
     with Session(engine) as session:
         yield session
 
-# Code here omitted 👈
+def create_db_and_tables():
+    SQLModel.metadata.create_all(engine)
+
+app = FastAPI()
+
+
+@app.on_event("startup")
+def on_startup():
+    create_db_and_tables()
+
 
 @app.post("/heroes/", response_model=HeroPublic)
 def create_hero(*, session: Session = Depends(get_session), hero: HeroCreate):
