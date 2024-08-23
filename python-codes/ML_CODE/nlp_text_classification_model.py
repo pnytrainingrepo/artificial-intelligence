@@ -45,7 +45,7 @@ with open('text_classification_model.pkl', 'wb') as file:
 
 
 
-#joblib.dump(model, 'text_classification_model.pkl')
+joblib.dump(model, 'text_classification_model.pkl')
 
 
-#print('Model saved as text_classification_model.pkl')
+print('Model saved as text_classification_model.pkl')

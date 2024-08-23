@@ -11,6 +11,11 @@ fastapi = "^0.112.1"
 uvicorn = {extras = ["standard"], version = "^0.30.6"}
 sqlmodel = "^0.0.21"
 psycopg2-binary = "^2.9.9"
+python-jose = "^3.3.0"
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+types-python-jose = "^3.3.4.20240106"
+types-passlib = "^1.7.7.20240819"
+python-multipart = "^0.0.9"
 
 
 [build-system]
