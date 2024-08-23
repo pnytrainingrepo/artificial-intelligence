@@ -1,0 +1,9 @@
+MART API:
+Tables:
+1: User [userid, username,password,creation_date]
+2: Product / Catelog [product_id,product_name,product_desc,product_price,product_qty
+                      product_created_date,userid]
+3: Order [order_id, product_id, order_qty,order_created_date, userid]
+
+
+

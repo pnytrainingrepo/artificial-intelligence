@@ -41,6 +41,11 @@ engine = create_engine(DATABASE_URL, echo=True)
 def create_db_and_tables():
     SQLModel.metadata.create_all(engine)
     
+# Dependency to get the database session
+def get_session():
+    with Session(engine) as session:
+        yield session
+    
 
 # Password hashing context
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
@@ -111,6 +116,13 @@ def register(user: User):
         session.commit()
         session.refresh(db_user)
         return db_user
+
+# Get all Users
+@app.get("/users/", response_model=List[User])
+async def get_users(session: Session = Depends(get_session)):
+    with Session(engine) as session:
+        users = session.exec(select(User)).all()
+        return users
 
 # User login route to get access token
 @app.post("/token", response_model=Token)
