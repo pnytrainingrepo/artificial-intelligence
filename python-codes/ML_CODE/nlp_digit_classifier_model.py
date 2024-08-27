@@ -1,4 +1,4 @@
-Step 1: Machine Learning Model
+# Step 1: Machine Learning Model
 
 # Importing necessary libraries
 import numpy as np

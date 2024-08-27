@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["Azam Rashid <azamrashid@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+fastapi = "^0.112.2"
+uvicorn = {extras = ["standard"], version = "^0.30.6"}
+sqlmodel = "^0.0.21"
+psycopg2 = "^2.9.9"
+alembic = "^1.13.2"
+python-jose = "^3.3.0"
+passlib = "^1.7.4"
+bcrypt = "^4.2.0"
+python-multipart = "^0.0.9"
+types-python-jose = "^3.3.4.20240106"
+types-passlib = "^1.7.7.20240819"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
