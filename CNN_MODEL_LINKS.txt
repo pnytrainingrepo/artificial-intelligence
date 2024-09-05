@@ -1,0 +1,5 @@
+https://www.kaggle.com/code/kerimelebiler/face-recognition-with-cnn
+
+https://www.kaggle.com/datasets/adityamahimkar/iqothnccd-lung-cancer-dataset?resource=download&select=Test+cases
+
+https://github.com/chetnakhanna16/CIFAR100_ImageRecognition/blob/master/EffiicientNetB0_CIFAR100.ipynb
