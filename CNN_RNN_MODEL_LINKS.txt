@@ -1,0 +1,13 @@
+https://www.kaggle.com/code/kerimelebiler/face-recognition-with-cnn
+
+https://www.kaggle.com/datasets/adityamahimkar/iqothnccd-lung-cancer-dataset?resource=download&select=Test+cases
+
+https://github.com/chetnakhanna16/CIFAR100_ImageRecognition/blob/master/EffiicientNetB0_CIFAR100.ipynb
+
+https://www.kaggle.com/code/kcsener/8-recurrent-neural-network-rnn-tutorial
+
+https://www.kaggle.com/code/ihsncnkz/rnn-and-lstm-with-keras
+
+https://www.kaggle.com/code/moonglow22/rnn-and-lstm-tutorial-for-beginners
+
+https://www.kaggle.com/code/prashant111/comprehensive-guide-to-rnn-with-keras
