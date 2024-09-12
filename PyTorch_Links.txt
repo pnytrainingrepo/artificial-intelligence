@@ -1,0 +1,4 @@
+https://github.com/yunjey/pytorch-tutorial
+
+
+https://www.kaggle.com/code/kanncaa1/pytorch-tutorial-for-deep-learning-lovers
