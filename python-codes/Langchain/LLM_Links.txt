@@ -1,0 +1,5 @@
+https://python.langchain.com/docs/tutorials/
+
+https://python.langchain.com/docs/tutorials/chatbot/
+
+https://python.langchain.com/docs/integrations/llms/google_ai/

@@ -1,0 +1,3 @@
+API KEY URL: https://aistudio.google.com/app/apikey
+
+(https://console.cloud.google.com/)
