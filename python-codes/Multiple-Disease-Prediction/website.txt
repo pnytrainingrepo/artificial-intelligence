@@ -1,0 +1,5 @@
+LINK 1:
+https://multiple-disease-abhijeet.onrender.com/
+
+LINK 2:
+https://abhi227070-multiple-disease-render-app-nuoh8o.streamlit.app/
