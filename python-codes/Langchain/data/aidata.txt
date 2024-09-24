@@ -1,0 +1,43 @@
+let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+let length = text.length;
+
+let text = "HELLO WORLD";
+let char = text.charAt(0);
+
+
+<p id="demo"></p>
+
+<script>
+let text = "HELLO WORLD";
+document.getElementById("demo").innerHTML = text.charCodeAt(0);
+</script>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h1>JavaScript Objects</h1>
+<h2>Adding a Method</h2>
+
+<p id="demo"></p>
+
+<script>
+// Create an Object
+const person = {
+  firstName: "John",
+  lastName: "Doe",
+  id: 5566,
+};
+
+// Add a Method
+person.name = function() {
+  return this.firstName + " " + this.lastName;
+};
+
+// Display Object Data
+document.getElementById("demo").innerHTML =
+"My father is " + person.name(); 
+</script>
+
+</body>
+</html>
+
